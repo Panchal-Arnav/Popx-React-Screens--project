@@ -1,0 +1,84 @@
+.login-container {
+  max-width: 350px;
+  margin: 1rem auto;
+  padding: 1.5rem;
+  background: #fbfbfc;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(106, 13, 173, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.login-container h2 {
+  font-weight: 900;
+  margin-bottom: 0.2rem;
+  color: #222;
+}
+
+.login-container p {
+  margin-bottom: 1.3rem;
+  color: #666;
+  font-size: 1rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  color: #4e4e6c;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px 12px;
+  margin-top: 0.3rem;
+  border-radius: 8px;
+  border: 1.5px solid #dddde6;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #6a0dad;
+  outline: none;
+}
+
+.btn-login {
+  width: 100%;
+  padding: 12px;
+  margin-top: 1rem;
+  font-weight: 700;
+  font-size: 1rem;
+  background-color: #aaaacf;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.btn-login:disabled {
+  background-color: #ccccee;
+  cursor: not-allowed;
+}
+
+.btn-login:not(:disabled):hover {
+  background-color: #6a0dad;
+}
+
+/* Fade in animation */
+.animated-fadeIn {
+  animation: fadeIn 0.8s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
